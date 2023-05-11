@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: new-test-springboot-iciv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/user1-tenant/new-test-springboot/new-test-springboot-iciv@sha256:25475580fc97f0df771b5e3fe49c9eae32a609b86c96c298c22739103f0c7e3d
+        name: my-java-springboot
+        resources: {}
+status: {}
